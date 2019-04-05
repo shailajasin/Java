@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XPATH is used to navigate the elements and attributes in document.It uses path expression too select the nodes in the document.-->
+<bookstore>                                    <!-- Root Element> -->
+	<book>                                    <!-- parent element -->
+		<title lang="en">Harry potter</title>  <!-- Lang is attribute -->
+		<author>SSK</author>                   <!-- element nodes -->
+		<price>20.00</price>                   <!-- elemetn node -->
+		<year>2005</year>                       <!-- element node -->
+	</book>
+</bookstore>
+
+<!-- title,author,price,year are sbilings  -->
+<!-- book and bookstore are ancestors to element nodes -->
+<!-- title,author,price,year ,book are descedants too book store -->
+<!-- nodename: selects all the nodes with the name "Nodename"-->
+<!-- /: Select from the root node (absolute path)-->
+<!-- //:selects nodes in the documents from the current node that matches what they are -->
+<!-- . : Selects the current node -->
+<!-- .. : selects the parent of current node  -->
+<!-- @: selects attributes -->
+
+<!-- bookstores: selects the node with the name "bookstores" -->
+<!--/bookstore: selects the root elemtn bookstores-->
+<!-- bookstore/book: Selects all the book elements that are the childrens of bookstore  -->
+<!-- //book: Select all the book elements no matter where they are in document-->
+<!--bookstore//book: selects all book elements that are descendant of the bookstore element no matter where they are-->
+<!-- @"lang" : Slects all the attributes that are named "lang -->
